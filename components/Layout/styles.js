@@ -15,7 +15,7 @@ export const Grid = styled.div`
   display: grid;
 
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 82px 646px auto 448px 82px;
+  grid-template-rows: 82px 646px auto 408px 82px;
 
   grid-template-areas:
     "NB NB NB NB"

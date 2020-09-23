@@ -1,16 +1,17 @@
 import React from "react";
 
+import { data } from "../../data";
+
 import { Container, TextContainer, StyledImage, Divider } from "./styles";
 
 const Banner = () => {
   return (
     <Container>
       <TextContainer>
-        <h2>There’s a whole world waiting for you. Go see it!</h2>
+        <h2>{data.titles.banner.title}</h2>
         <Divider />
         <h3>
-          Backpackers is our ultimate travel companion. Carries all the
-          information you need while travelling.
+          {data.titles.banner.subtitle}.
         </h3>
       </TextContainer>
       <StyledImage src="/images/04.png" alt="" />

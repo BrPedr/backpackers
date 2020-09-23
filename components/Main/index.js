@@ -1,5 +1,7 @@
 import React from "react";
 
+import { data } from "../../data";
+
 import {
   MdMap,
   MdContentPaste,
@@ -19,39 +21,38 @@ import PricingBox from "../PricingBox";
 import { StyledMain, Divider } from "./styles";
 
 const Main = () => {
+  const textCall = data.titles.section.call;
+  const { subtitle } = data.titles.section;
+  const { perks } = data.titles.section;
+
   return (
     <StyledMain>
-      <h1>Join the biggest community of backpackers</h1>
+      <h1>{data.titles.section.title[0]}</h1>
       <Divider />
       <Perks
         primary
         imageUrl={"/images/drawkit-transport-scene-3.svg"}
-        callText={"PLAN AHEAD"}
-        title={"The world is just one click away from you"}
+        callText={textCall[0]}
+        title={subtitle[0]}
       >
         <PerksText
           primary
-          imageUrl={MdMap}
-          topicTitle={"Choose Roads"}
-          topicText={
-            "Create complete travel plans with the maps and places you want to stay"
-          }
+          topicTitle={perks.title[0]}
+          topicText={perks.description[0]}
         >
           <MdMap />
         </PerksText>
         <PerksText
           primary
-          topicTitle={"Control The Budget"}
-          topicText={
-            "Take control of your expenses by managing them inside the app itself"
-          }
+          topicTitle={perks.title[1]}
+          topicText={perks.description[1]}
         >
           <MdContentPaste />
         </PerksText>
         <PerksText
           primary
-          topicTitle={"Manage Your Time"}
-          topicText={"Define how much time you want to spend on each location"}
+          topicTitle={perks.title[2]}
+          topicText={perks.description[2]}
         >
           <MdAccessTime />
         </PerksText>
@@ -59,29 +60,16 @@ const Main = () => {
 
       <Perks
         imageUrl={"/images/wfh_9.svg"}
-        callText={"GET CONNECTED"}
-        title={"Meet your friends around the world"}
+        callText={textCall[1]}
+        title={subtitle[1]}
       >
-        <PerksText
-          topicTitle={"Share Memories"}
-          topicText={
-            "Share your log travel with your fellow travellers and get to know them more"
-          }
-        >
+        <PerksText topicTitle={perks.title[3]} topicText={perks.description[3]}>
           <MdShare />
         </PerksText>
-        <PerksText
-          topicTitle={"Share Plans"}
-          topicText={
-            "Send your cards travels to anyone you want and make a trip together"
-          }
-        >
+        <PerksText topicTitle={perks.title[4]} topicText={perks.description[4]}>
           <MdSend />
         </PerksText>
-        <PerksText
-          topicTitle={"Follow travellers"}
-          topicText={"Like and discover places recommended by backpackers"}
-        >
+        <PerksText topicTitle={perks.title[5]} topicText={perks.description[5]}>
           <MdFavoriteBorder />
         </PerksText>
       </Perks>
@@ -89,31 +77,27 @@ const Main = () => {
       <Perks
         primary
         imageUrl={"/images/undraw_camping_noc8.svg"}
-        callText={"DISCOVER NEW PLACES"}
-        title={"Life is an adventure. Seize it!"}
+        callText={textCall[2]}
+        title={subtitle[2]}
       >
         <PerksText
           primary
-          topicTitle={"Get Suggestions"}
-          topicText={
-            "See sugestions of places and events to attend based on the cities you are at"
-          }
+          topicTitle={perks.title[6]}
+          topicText={perks.description[6]}
         >
           <MdMyLocation />
         </PerksText>
         <PerksText
           primary
-          topicTitle={"Create Events"}
-          topicText={"Create an event to gather other backpackers"}
+          topicTitle={perks.title[7]}
+          topicText={perks.description[7]}
         >
           <MdSentimentSatisfied />
         </PerksText>
         <PerksText
           primary
-          topicTitle={"Be Secure"}
-          topicText={
-            "Be secure sharing your location in real time with anyone you trust"
-          }
+          topicTitle={perks.title[8]}
+          topicText={perks.description[8]}
         >
           <MdLockOutline />
         </PerksText>

@@ -1,5 +1,6 @@
 import React from "react";
 
+import { data } from "../../data";
 import PricingCard from "../PricingCard";
 
 import { Container, SectionCall, PricingCardsContainer } from "./styles";
@@ -8,7 +9,7 @@ const PricingBox = () => {
   return (
     <Container>
       <SectionCall>PRICING TABLE</SectionCall>
-      <h1>Choose the plan that’s right for you</h1>
+      <h1>{data.titles.section.title[1]}</h1>
       <PricingCardsContainer>
         <PricingCard
           value={"Free"}

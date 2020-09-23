@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Icons, TopicDescription, Container, TextContainer } from "./styles";
+import { Icons, TopicDescription, Container } from "./styles";
 
 const PerksText = ({ primary, children, topicTitle, topicText }) => {
   return (
@@ -20,12 +20,12 @@ const PerksText = ({ primary, children, topicTitle, topicText }) => {
           <TopicDescription>
             <h2>{topicTitle}</h2>
             <h3>{topicText}</h3>
-          </TopicDescription>{" "}
+          </TopicDescription>
           <Icons alt="symbol" viewBox="-10 -7 35 30">
             {children}
           </Icons>
         </>
-      )}{" "}
+      )}
     </Container>
   );
 };
