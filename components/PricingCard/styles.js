@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const PricingCard = styled.div`
   width: 228px;
+  /* width: calc((calc(29% + 5px)) + 25px); */
   height: 385px;
 
   display: flex;
@@ -13,10 +14,15 @@ export const PricingCard = styled.div`
   background-color: var(--white);
   box-shadow: 0px 2px 10px 3px rgba(0, 0, 0, 0.12);
   border-radius: 41px;
+
+  @media (max-width: 1300px) {
+    width: 31%;
+    height: 420px;
+  }
 `;
 
 export const Icon = styled.div`
-  color: var(--senary);git
+  color: var(--senary);
 `;
 
 export const ValueContainer = styled.div`

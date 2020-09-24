@@ -15,7 +15,7 @@ export const StyledButton = styled.button`
     props.color === "primary" ? "var(--black)" : "var(--white)"};
 
   border: ${(props) =>
-    props.color === "primary" ? "2px solid var(--white)" : null};
+    props.color === "primary" ? "2px solid var(--primary)" : null};
   border-radius: 6px;
 
   font-size: 15px;

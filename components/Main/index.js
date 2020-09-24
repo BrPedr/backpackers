@@ -29,6 +29,7 @@ const Main = () => {
     <StyledMain>
       <h1>{data.titles.section.title[0]}</h1>
       <Divider />
+
       <Perks
         primary
         imageUrl={"/images/drawkit-transport-scene-3.svg"}

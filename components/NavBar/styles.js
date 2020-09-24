@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.header`
   grid-area: NB;
-
-
+  
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -15,6 +14,10 @@ export const ButtonsContainer = styled.div`
   flex-basis: 263px;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 export const LinksContainer = styled.div`
@@ -30,11 +33,23 @@ export const LinksContainer = styled.div`
 
   color: var(--black);
 
-  a:hover{
+  a:hover {
     opacity: 0.4;
+  }
+
+  @media (max-width: 1000px) {
+    display: none;
   }
 `;
 
 export const Title = styled.h1`
   font-family: "Comfortaa", sans-serif;
+
+  @media (max-width: 1000px) {
+    font-size: 1.5em;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1em;
+  }
 `;

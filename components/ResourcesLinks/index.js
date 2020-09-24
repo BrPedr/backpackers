@@ -42,7 +42,7 @@ const ResourcesLinks = () => {
       </LinksWrapper>
       <LinksWrapper>
         <Title>Subscribe</Title>
-        <input></input>
+        {/* <input></input> */}
         <h3>9/10</h3>
         <h3>Overall rating</h3>
         <Icon></Icon>

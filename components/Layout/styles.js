@@ -14,24 +14,31 @@ import styled from "styled-components";
 export const Grid = styled.div`
   display: grid;
 
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 82px 646px auto 408px 82px;
+  grid-template-columns: 10% repeat(4, 20%) 10%;
+  grid-template-rows: 82px 646px auto auto 82px;
 
   grid-template-areas:
-    "NB NB NB NB"
-    "BT BT BT BT"
-    /* "BS BS BI BI"
-    "ST ST ST ST"
-    "SI SI SP SP"
-    "SP SP SI SI"
-    "SI SI SP SP"
-    "ST ST ST ST"
-    "PC PC PC PC" */
-    /* "ST ST ST ST" */
-    "SP SP SP SP"
-    "UL UL UL UL"
-    "FT FT FT FT";
+    "NB NB NB NB NB NB"
+    ". BT BT BT BT ."
+    ". SP SP SP SP ."
+    "UL UL UL UL UL UL"
+    "FT FT FT FT FT FT";
 
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: 1000px) {
+    grid-template-rows: 82px 440px auto auto 82px;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-rows: 32px 340px auto auto 82px;
+  }
+
+  @media (max-width: 481px) {
+    grid-template-rows: 32px 200px auto auto 82px;
+  }
 `;

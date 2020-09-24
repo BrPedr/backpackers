@@ -20,11 +20,26 @@ export const Container = styled.section`
     font-size: 14px;
     line-height: 228.4%;
   }
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    margin: 0 10px 0 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  @media (max-width: 481px) {
+    margin: 20px -10px 10px 10px;
+  }
 `;
 
 export const LinksWrapper = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 1000px) {
+   padding: 5px;
+  }
 `;
 
 export const Title = styled.div`

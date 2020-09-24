@@ -3,13 +3,12 @@ import styled from "styled-components";
 export const StyledMain = styled.main`
   grid-area: SP;
 
-
   display: flex;
 
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
+  
   h1 {
     font-style: normal;
     font-weight: bold;
@@ -17,6 +16,14 @@ export const StyledMain = styled.main`
     line-height: 40px;
     text-align: center;
     letter-spacing: -0.015em;
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+
+    @media (max-width: 481px) {
+      font-size: 1.3rem;
+    }
   }
 `;
 
@@ -27,4 +34,14 @@ export const Divider = styled.div`
   background: var(--primary);
 
   margin: 0.2em 0 2em 1em;
+
+  @media (max-width: 768px) {
+    width: 10em;
+  }
+
+  @media (max-width: 481px) {
+    width: 8em;
+
+    margin: 0.2em 0 2em 0;
+  }
 `;

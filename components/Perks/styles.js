@@ -8,17 +8,34 @@ export const Container = styled.section`
 
   width: 100%;
 
-  margin-bottom: 5em;
+  margin-bottom: 2em;
+
+  display: ${(props) => (props.perksForMobile ? "none" : null)};
+
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    margin-bottom: 2.5em;
+  }
+
+  @media (max-width: 481px) {
+    margin-bottom: 4em;
+  }
 `;
 
 export const StyledImage = styled.img`
-  width: 566px;
-  height: 351px;
+  width: 100%;
+  height: auto;
 
   margin-left: ${(props) => (props.primary ? "auto" : "none")};
 
-  @media (max-width: 1170px) {
-    display: none;
+  @media (max-width: 1300px) {
+    margin-bottom: 2.5em;
+  }
+  @media (max-width: 481px) {
+    margin-bottom: ${(props) => (props.primary ? null : "-3em")};
+    margin-top: ${(props) => (props.primary ? null : "2em")};
+
+    width: 110%;
   }
 `;
 
@@ -27,10 +44,6 @@ export const TextContainer = styled.div`
   flex-direction: column;
 
   align-items: ${(props) => (props.primary ? "flex-start" : "flex-end")};
-  justify-content: space-between;
-
-  margin-right: ${(props) => (props.primary ? "auto" : "none")};
-  padding: ${(props) => (props.primary ? "0 30px" : null)};
 `;
 
 export const SectionCall = styled.div`
@@ -48,10 +61,13 @@ export const SectionCall = styled.div`
   color: var(--grey);
 
   text-align: ${(props) => (props.primary ? "left" : "right")};
+
+  @media (max-width: 1300px) {
+    font-size: 20px;
+  }
 `;
 
 export const SectionTitle = styled.h2`
-  width: 428px;
   height: 85px;
 
   font-family: "Comfortaa", sans-serif;
@@ -64,6 +80,14 @@ export const SectionTitle = styled.h2`
   margin-bottom: 20px;
 
   text-align: ${(props) => (props.primary ? "left" : "right")};
+
+  @media (max-width: 1300px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const Divider = styled.div`
@@ -81,7 +105,6 @@ export const TopicsContainer = styled.div`
   height: 230px;
 
   flex-direction: column;
-  justify-content: space-between;
 
   text-align: ${(props) => (props.primary ? "left" : "right")};
 `;

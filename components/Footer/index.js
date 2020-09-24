@@ -9,7 +9,7 @@ import {
 
 import { Container, LinksContainer, Title, Icons } from "./styles";
 
-const NavBar = () => {
+const Footer = () => {
   return (
     <Container>
       <Title>Backpackers</Title>
@@ -37,4 +37,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Footer;

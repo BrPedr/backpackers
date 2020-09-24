@@ -9,6 +9,12 @@ export const Container = styled.section`
 
   font-family: "Montserrat", sans-serif;
 
+  @media (max-width: 1000px) {
+    .setDisplay {
+      display: none;
+    }
+  }
+
   h1 {
     font-style: normal;
     font-weight: bold;
@@ -47,4 +53,14 @@ export const PricingCardsContainer = styled.div`
 
   background-color: rgba(234, 165, 139, 0.21);
   border-radius: 50px;
+
+  @media (max-width: 1300px) {
+    width: 100%;
+    padding: 0 2em;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;

@@ -3,7 +3,7 @@ export const data = {
     banner: {
       title: "There’s a whole world waiting for you. Go see it!",
       subtitle:
-        "Backpackers is our ultimate travel companion. Carries all the information you need while travelling.",
+        "Backpackers is your ultimate travel companion. Carries all the information you need while travelling.",
     },
     section: {
       title: [

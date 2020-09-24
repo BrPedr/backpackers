@@ -17,9 +17,9 @@ const PerksText = ({ primary, children, topicTitle, topicText }) => {
         </>
       ) : (
         <>
-          <TopicDescription>
+          <TopicDescription secondary>
             <h2>{topicTitle}</h2>
-            <h3>{topicText}</h3>
+            <h3 secondary>{topicText}</h3>
           </TopicDescription>
           <Icons alt="symbol" viewBox="-10 -7 35 30">
             {children}
