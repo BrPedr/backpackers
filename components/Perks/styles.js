@@ -29,6 +29,7 @@ export const StyledImage = styled.img`
 
   @media (max-width: 1300px) {
     margin-bottom: 2.5em;
+    width: 100%;
   }
   @media (max-width: 481px) {
     margin-bottom: ${(props) => (props.primary ? null : "-3em")};
@@ -80,10 +81,10 @@ export const SectionTitle = styled.h2`
 
   text-align: ${(props) => (props.primary ? "left" : "right")};
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1400px) {
     font-size: 30px;
   }
-
+  
   @media (max-width: 768px) {
     font-size: 1.5rem;
   }
