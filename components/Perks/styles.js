@@ -23,10 +23,9 @@ export const Container = styled.section`
 `;
 
 export const StyledImage = styled.img`
-  width: 100%;
+  max-width: 700px;
   height: auto;
 
-  margin-left: ${(props) => (props.primary ? "auto" : "none")};
 
   @media (max-width: 1300px) {
     margin-bottom: 2.5em;
