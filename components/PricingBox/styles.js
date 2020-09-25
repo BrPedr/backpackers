@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const Container = styled.section`
   grid-area: SP;
 
+  margin-top: 4em;
+
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -44,14 +44,9 @@ export const TopicDescription = styled.div`
   font-family: "Comfortaa", sans-serif;
 
   width: 100%;
-
-  margin-left: ${(props) => (props.secondary ? null : "20px")};
+  padding-left: ${(props) => (props.secondary ? null : "20px")};
   margin-right: ${(props) => (props.secondary ? "20px" : null)};
   margin-bottom: 0.6em;
-
-  @media (max-width: 481px) {
-    padding-left: ${(props) => (props.secondary ? null : "20px")};
-  }
 
   h2 {
     font-weight: bold;

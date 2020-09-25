@@ -39,6 +39,6 @@ export const Grid = styled.div`
   }
 
   @media (max-width: 481px) {
-    grid-template-rows: 32px 200px auto auto 82px;
+    grid-template-rows: 32px 200px auto auto 42px;
   }
 `;

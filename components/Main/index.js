@@ -60,6 +60,7 @@ const Main = () => {
       </Perks>
 
       <Perks
+        className="hidden"
         imageUrl={"/images/wfh_9.svg"}
         callText={textCall[1]}
         title={subtitle[1]}
@@ -77,7 +78,37 @@ const Main = () => {
 
       <Perks
         primary
-        imageUrl={"/images/undraw_camping_noc8.svg"}
+        imageUrl={"/images/wfh_9.svg"}
+        callText={textCall[1]}
+        title={subtitle[1]}
+        className="reverse-hidden reverse-hidden-image"
+      >
+        <PerksText
+          primary
+          topicTitle={perks.title[3]}
+          topicText={perks.description[3]}
+        >
+          <MdShare />
+        </PerksText>
+        <PerksText
+          primary
+          topicTitle={perks.title[4]}
+          topicText={perks.description[4]}
+        >
+          <MdSend />
+        </PerksText>
+        <PerksText
+          primary
+          topicTitle={perks.title[5]}
+          topicText={perks.description[5]}
+        >
+          <MdFavoriteBorder />
+        </PerksText>
+      </Perks>
+
+      <Perks
+        primary
+        imageUrl={"/images/camping.svg"}
         callText={textCall[2]}
         title={subtitle[2]}
       >

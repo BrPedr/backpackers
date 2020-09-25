@@ -8,17 +8,40 @@ export const Container = styled.section`
 
   width: 100%;
 
-  margin-bottom: 2em;
+  .reverse-hidden,
+  .reverse-hidden-image {
+    display: none;
+  }
+
+  /* margin-bottom: 1em; */
 
   display: ${(props) => (props.perksForMobile ? "none" : null)};
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1307px) {
     flex-direction: column;
-    margin-bottom: 2.5em;
+    /* margin-bottom: 2.5em; */
+
+    .reverse-hidden {
+      display: block;
+      margin-bottom: 2em;
+    }
+
+    .reverse-hidden-image {
+      display: block;
+    }
   }
 
   @media (max-width: 481px) {
-    margin-bottom: 4em;
+    margin-bottom: 1em;
+
+    .reverse-hidden {
+      display: block;
+      margin-bottom: 4em;
+    }
+
+    .reverse-hidden-image{
+      margin-bottom: -0.5em;
+    }
   }
 `;
 
@@ -26,10 +49,13 @@ export const StyledImage = styled.img`
   max-width: 700px;
   height: auto;
 
-
   @media (max-width: 1300px) {
     margin-bottom: 2.5em;
     width: 100%;
+    
+    .hidden {
+      display: none;
+    }
   }
   @media (max-width: 481px) {
     margin-bottom: ${(props) => (props.primary ? null : "-3em")};

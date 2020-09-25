@@ -15,8 +15,20 @@ const Perks = ({ primary, imageUrl, children, callText, title }) => {
     <Container>
       {primary ? (
         <>
-          <StyledImage primary src={imageUrl} alt="Illustration" />
-          <TextContainer primary>
+          <StyledImage
+            primary
+            src={imageUrl}
+            alt="Illustration"
+            className={`${
+              callText === "GET CONNECTED" ? "reverse-hidden-image" : null
+            }`}
+          />
+          <TextContainer
+            primary
+            className={`${
+              callText === "GET CONNECTED" ? "reverse-hidden" : null
+            }`}
+          >
             <SectionCall primary>{callText}</SectionCall>
             <SectionTitle primary>{title}</SectionTitle>
             <Divider />
@@ -25,13 +37,13 @@ const Perks = ({ primary, imageUrl, children, callText, title }) => {
         </>
       ) : (
         <>
-          <TextContainer>
+          <TextContainer className="hidden">
             <SectionCall>{callText}</SectionCall>
             <SectionTitle>{title}</SectionTitle>
             <Divider />
             <TopicsContainer>{children}</TopicsContainer>
           </TextContainer>
-          <StyledImage src={imageUrl} alt="Illustration" />
+          <StyledImage src={imageUrl} alt="Illustration" className="hidden" />
         </>
       )}
     </Container>

@@ -4,11 +4,27 @@ export const StyledMain = styled.main`
   grid-area: SP;
 
   display: flex;
+  margin-top: 3em;
 
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  
+
+  .reverse-hidden,
+  .reverse-hidden-image {
+    display: none;
+  }
+
+  @media (max-width: 1300px) {
+    .hidden {
+      display: none;
+    }
+    .reverse-hidden,
+    .reverse-hidden-image {
+      display: block;
+    }
+  }
+
   h1 {
     font-style: normal;
     font-weight: bold;

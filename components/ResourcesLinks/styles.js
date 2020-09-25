@@ -3,8 +3,10 @@ import styled from "styled-components";
 export const Container = styled.section`
   grid-area: UL;
 
-  margin: 5em 5% 0 10%;
+  margin: 1em 5% 0 10%;
 
+  padding-top: 3em;
+  
   display: flex;
   justify-content: space-around;
 
@@ -27,7 +29,7 @@ export const Container = styled.section`
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  
+
   @media (max-width: 481px) {
     margin: 20px -10px 10px 10px;
   }
@@ -38,7 +40,7 @@ export const LinksWrapper = styled.div`
   flex-direction: column;
 
   @media (max-width: 1000px) {
-   padding: 5px;
+    padding: 5px;
   }
 `;
 

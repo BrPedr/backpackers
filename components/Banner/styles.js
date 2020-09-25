@@ -97,6 +97,7 @@ export const Subtitle = styled.h3`
   }
 
   @media (max-width: 481px) {
+    font-size: 15px;
     grid-row: 2 / 4;
     text-align: right;
   }
