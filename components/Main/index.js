@@ -17,6 +17,7 @@ import {
 import Perks from "../Perks";
 import PerksText from "../PerksText";
 import PricingBox from "../PricingBox";
+import Camping from "../../animations/Camping";
 
 import { StyledMain, Divider } from "./styles";
 
